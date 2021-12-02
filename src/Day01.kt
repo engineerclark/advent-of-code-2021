@@ -44,7 +44,7 @@ fun main() {
             .count { it.isDeeper }
     }
 
-    val input = readInput("Day01_input")
+    val input = readInput("day01")
     val depths = input.map { it.toInt() }
     println("Part 1: Depth increases: ${part1(depths)}")
     println("Part 2: Windowed depth increases: ${part2(depths)}")

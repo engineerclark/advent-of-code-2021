@@ -49,7 +49,7 @@ fun part2(movements: List<Position>): Int = movements.aggregatePositionWithAim()
     .let { it.position.depth * it.position.horizontal}
 
 fun main() {
-    val input = readInput("Day02_input")
+    val input = readInput("day02")
     val movements = input.map(::stringToPosition)
     println("Part 1: Final positions multiplied: ${part1(movements)}")
     println("Part 2: Final positions using aim, multiplied: ${part2(movements)}")
