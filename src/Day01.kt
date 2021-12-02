@@ -39,7 +39,7 @@ fun main() {
     }
 
     fun part2(input: List<Int>): Int {
-        return IntRange(2, input.lastIndex)
+        return IntRange(3, input.lastIndex)
             .map(input::getWindowDelta)
             .count { it.isDeeper }
     }
